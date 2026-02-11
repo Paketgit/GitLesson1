@@ -1,15 +1,21 @@
+def FillArr(arr, n):
+    i = 0
+    while (i < n):
+        tmp = int(input(""))
+        arr.append(tmp)
+        i += 1
+
+
+def PrintArr(arr):
+    print("Array:")
+    for i in arr:
+        print(f"{i} ")
+
 arr = list()
 n = int(input("Enter number of elements: "))
 print("Enter elements:")
-i = 0
-while (i < n):
-    tmp = int(input(""))
-    arr.append(tmp)
-    i += 1
-    
-print("Array:")
-i = 0
-while (i < n):
-    print(arr[i], end = " ")
-    i += 1
+
+FillArr(arr, n)
+PrintArr(arr)
+
 print("")
