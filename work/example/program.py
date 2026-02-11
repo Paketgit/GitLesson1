@@ -15,7 +15,8 @@ arr = list()
 n = int(input("Enter number of elements: "))
 print("Enter elements:")
 
-FillArr(arr, n)
-PrintArr(arr)
-
+n = int(input("Enter number of elements: "))
+if (n <= 15 and n > 0):   
+    FillArr(arr, n)
+    PrintArr(arr)
 print("")
